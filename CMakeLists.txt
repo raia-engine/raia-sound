@@ -5,7 +5,12 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-add_library(raia_sound SHARED src/library.c src/platforms.h src/util/util_math.h src/util/util_math.c)
+add_library(raia_sound SHARED
+        src/library.c
+        src/platforms.h
+        src/util/util_math.h
+        src/util/util_math.c
+        )
 
 target_link_libraries(raia_sound
         $<$<PLATFORM_ID:Darwin>: "-framework OpenAL">

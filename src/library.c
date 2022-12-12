@@ -32,11 +32,9 @@ void openal_start(void) {
     alcCloseDevice(device);
 }
 
-
 duk_ret_t hello(duk_context *ctx) {
     printf("Sound Start\n");
     openal_start();
     printf("Sound End\n");
     return NO_RETURN_VALUE;
 }
-
