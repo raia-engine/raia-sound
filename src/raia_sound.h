@@ -1,5 +1,5 @@
-#ifndef RAIA_SOUND_LIBRARY_H
-#define RAIA_SOUND_LIBRARY_H
+#ifndef RAIA_SOUND_RAIA_SOUND_H
+#define RAIA_SOUND_RAIA_SOUND_H
 
 #include <stdio.h>
 #include "duktape/duktape.h"
@@ -20,4 +20,4 @@
 
 duk_ret_t hello(duk_context *ctx);
 
-#endif //RAIA_SOUND_LIBRARY_H
+#endif //RAIA_SOUND_RAIA_SOUND_H
